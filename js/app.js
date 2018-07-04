@@ -118,9 +118,9 @@ function isOver() {
 }
 
 /// Game timer
-var second = 0, minute = 0;
-var timer = document.querySelector(".timer");
-var interval;
+let second = 0, minute = 0;
+let timer = document.querySelector(".timer");
+let interval;
 function startTimer(){
     interval = setInterval(function(){
         timer.innerHTML = minute+" mins - "+second+" secs";
@@ -181,7 +181,7 @@ restartButton.addEventListener("click", function() {
   ratingContainer.innerHTML = '<li><i class="fa fa-star"></i></li> <li><i class="fa fa-star"></i></li> <li><i class="fa fa-star"></i></li>';
   
   //Reset the timer
-  var timer = document.querySelector(".timer");
+  let timer = document.querySelector(".timer");
   second = 0;
   minute = 0; 
   timer.innerHTML = "0 mins - 0 secs";
