@@ -165,8 +165,8 @@ function addMove() {
 
 
 /// Setup restart button
-const restartButton = document.querySelector(".restart");
-restartButton.addEventListener("click", function() {
+const restartGame = document.querySelector(".restart");
+restartGame.addEventListener("click", function() {
   
   // Turning cards to blank
   cardDeck.innerHTML = "";
