@@ -161,7 +161,7 @@ function addMove() {
   }
     
   // Rating based on amount of moves
-  if (moves > 2 && moves < 18){
+  if (moves > 14 && moves < 18){
     for( i= 0; i < 3; i++){
       if(i > 1){
         stars[i].style.visibility = "collapse";
