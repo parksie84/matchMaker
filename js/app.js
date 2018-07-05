@@ -1,6 +1,6 @@
 /*
 The following Javascript was built with the base knowledge I received from Udacity as well as other blogs,
-YouTube tutorials,and the Udacity forums.
+YouTube tutorials, and the Udacity forums.
 Sources used: 
  https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript
  https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/
