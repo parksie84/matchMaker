@@ -1,4 +1,4 @@
-/*
+//*
 * The following Javascript was built with the base knowledge I received from Udacity as well as other blogs,
 * YouTube tutorials, and the Udacity forums.
 * Sources used: 
@@ -7,7 +7,7 @@
 * https://www.khanacademy.org/computing/computer-programming/programming-games-visualizations/memory-game/a/intro-to-memory
 * https://www.youtube.com/watch?v=Nik1E9HdrsI
 * https://knowledge.udacity.com/?nanodegree=5d1543a2-496f-11e8-b51b-238bfb35bf1b&page=1&project=563f8934-496f-11e8-b36f-af2a80ccd624
-/*
+//*
 
 
 /// Create a list that holds all of your cards
@@ -159,7 +159,7 @@ function addMove() {
   }
     
   // Rating based on amount of moves
-  if (moves > 14 && moves < 18){
+  if (moves > 2 && moves < 18){
     for( i= 0; i < 3; i++){
       if(i > 1){
         stars[i].style.visibility = "collapse";
