@@ -4,6 +4,7 @@ YouTube tutorials,and the Udacity forums.
 Sources used: 
  https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript
  https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/
+ https://github.com/Cashed/memory-game
  https://www.khanacademy.org/computing/computer-programming/programming-games-visualizations/memory-game/a/intro-to-memory
  https://www.youtube.com/watch?v=Nik1E9HdrsI
  https://codereview.stackexchange.com/questions/172417/simple-memory-game-in-javascript
