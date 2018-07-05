@@ -22,7 +22,7 @@ const allCards = [
 const cardDeck = document.querySelector(".deck");
 const stars = document.querySelectorAll(".fa-star");
 const ratingContainer = document.querySelector(".stars");
-let openedCards = [];
+let flippedCards = [];
 let matchedCards = [];
 
 /// Shuffle function from http://stackoverflow.com/a/2450976
@@ -65,12 +65,12 @@ function click(card) {
   // Click event listener
   card.addEventListener("click", function() {
     const currentCard = this;
-    const previousCard = openedCards[0];
+    const previousCard = flippedCards[0];
     
     // Click to open card
-    if (openedCards.length === 1) {
+    if (flippedCards.length === 1) {
       card.classList.add("open", "show", "disable");
-      openedCards.push(this);
+      flippedCards.push(this);
       
       // Compare two opened cards
       compare(currentCard, previousCard);
@@ -78,7 +78,7 @@ function click(card) {
       
       // Unopened cards
       currentCard.classList.add("open", "show", "disable");
-      openedCards.push(this);
+      flippedCards.push(this);
     }
   });
 }
@@ -91,7 +91,7 @@ function compare(currentCard, previousCard) {
     currentCard.classList.add("match");
     previousCard.classList.add("match");
     matchedCards.push(currentCard, previousCard);
-    openedCards = [];
+    flippedCards = [];
     
     // Checks if the game is over
     isOver();
@@ -101,7 +101,7 @@ function compare(currentCard, previousCard) {
     setTimeout(function() {
       currentCard.classList.remove("open", "show");
       previousCard.classList.remove("open", "show");
-      openedCards = [];
+      flippedCards = [];
     }, 250);
   }
 
@@ -191,4 +191,3 @@ restartGame.addEventListener("click", function() {
 
 /// Replay the game
 startGame();
-
